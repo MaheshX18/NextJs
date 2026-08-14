@@ -23,11 +23,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en">
+      <body>
+        <header
+          style={{
+            background: "#7e0aa18a",
+            color: "white",
+            padding: "10px",
+            textAlign: "center",
+          }}
+        >
+          Student Portal
+        </header>
+
+        {children}
+      </body>
     </html>
   );
 }
